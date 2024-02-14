@@ -10,7 +10,10 @@ export const GET = async () => {
   })
 }
 
-export const POST = () => {
+// request = prop
+export const POST = async (request) => {
+  const {name, lastname} = await request.json();
+  console.log(name, lastname);
   return NextResponse.json({ 
     message: "Send information!" 
   })
