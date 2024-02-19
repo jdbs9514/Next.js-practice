@@ -1,6 +1,10 @@
 // API Routes Handlers
 import { NextResponse } from "next/server" 
 
+// when you want to use the .env file only tip the next text:
+// process.env.TOKEN
+
+
 // made an API since your frontend
 export const GET = async () => {
   const res = await fetch('https://jsonplaceholder.typicode.com/users')
